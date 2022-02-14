@@ -1,0 +1,42 @@
+#kontak-my{
+    padding-bottom: 10%;
+}
+
+#kontak-my h1{
+    text-shadow: 2px 2px orange;
+    padding: 5% 0 5% 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+#kontak-my h5{
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.google-map{
+
+    overflow:hidden;
+    margin-top:4.5%;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+
+}
+
+.google-map iframe{
+
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+
+@media (max-width: 1028px) {
+ form{
+     padding-bottom: 5%;
+ }
+}

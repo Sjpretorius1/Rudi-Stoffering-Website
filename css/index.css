@@ -1,0 +1,122 @@
+/* top section */
+
+a{
+ text-decoration: none;
+ color: black;
+ text-decoration: underline;
+}
+
+a:hover{
+    color: orange;
+}
+
+
+#top-section h1{
+    text-shadow: 2px 2px orange;
+    font-weight: bold;
+    text-align: center;
+    margin: 15% 0 5% 0;
+}
+
+
+#top-section h2{
+    text-shadow: 2px 2px orange;
+    font-weight: bold;
+    text-align: center;
+}
+
+.top-text{
+    padding: 5% 0 5% 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.image-fluid{
+    background-image: url("../images/image1.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    clear: both;
+    
+}
+
+.top-container{
+    padding: 0 0 10%;
+}
+
+/* middle section */
+#middle-section h1{
+    text-shadow: 2px 2px orange;
+    background-color: white;
+    padding: 5% 0 5% 0;
+    font-weight: 700;
+    text-align: center;
+}
+#middle-section{
+    background-color: lightgray;
+    padding: 0 0 3% 0;
+}
+
+.middle-top-para{
+    padding: 5% 0 0 0;
+}
+
+.middle-top-text{
+    font-size: 1.2rem;
+    font-weight: 750;
+    padding-left: 2%;
+
+}
+
+.middle-top-image{
+    border-radius: 10%;
+    width: 50%;
+    clear: both;
+    margin: 5% 0 0 35%;
+}
+
+/* completed projects section */
+
+#completed-projects h1{
+    text-shadow: 2px 2px orange;
+    background-color: white;
+    padding: 5% 0 5% 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+#completed-projects{
+    background-color: lightgrey;
+    padding-bottom: 5%;
+}
+
+
+.img-tumb{
+    border-radius: 10%;
+    width: 25%;
+    clear: both;
+    margin: 5% 0 0 6%;
+}
+
+.img-tumb2{
+    border-radius: 10%;
+    width: 24.5%;
+    clear: both;
+    margin: 5% 0 0 6%;
+}
+
+.img-tumb3{
+    border-radius: 10%;
+    width: 250%;
+    clear: both;
+    margin: 5% 0 0 55%;
+}
+
+.img-tumb4{
+    border-radius: 10%;
+    width: 50%;
+    clear: both;
+    margin: 5% 0 0 25%;
+}
+
