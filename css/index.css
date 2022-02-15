@@ -120,3 +120,11 @@ a:hover{
     margin: 5% 0 0 25%;
 }
 
+@media (max-width: 1028px){
+    .middle-top-image{
+        border-radius: 10%;
+        width: 50%;
+        clear: both;
+        margin: 5% 0 0 25%;
+    }
+}
