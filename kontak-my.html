@@ -1,106 +1,253 @@
 <!DOCTYPE html>
+<html lang="af">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Kontak My | Rudi's Stoffering</title>
+    <link rel="icon" href="images/icon_Rudi.png">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Rudi's Stoffering</title>
-        <link rel="icon" href="images\Icon_Rudi.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="keywords" content="Stoffering, Tolwe, Upholstery">
-        <meta name="robot" content="index, follow">
-        <!-- bootstrap style sheet -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- SEO -->
+    <meta name="keywords" content="Rudi Stoffering Kontak, Tolwe Upholstery Kontak, Limpopo Bekleeding Kwotasie">
+    <meta name="description" content="Kontak Rudi Prinsloo vir 'n kwotasie oor jou stofferingsprojek. Gestuur 'n boodskap of WhatsApp my direk. Gebaseer in Tolwe, Limpopo.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rudi's Stoffering">
 
-        <!-- fontawesome -->
-        <script defer src="fontawesomev6\js\all.js"></script>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kontak My | Rudi's Stoffering">
+    <meta property="og:description" content="Kry 'n kwotasie vir jou stofferingsprojek. Gebaseer in Tolwe, Limpopo.">
+    <meta property="og:url" content="https://sjpretorius1.github.io/Rudi-Stoffering-Website/kontak-my.html">
 
-        <!-- css style sheet -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/kontak-my.css">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGT9CRT4GM"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-          gtag('config', 'G-YGT9CRT4GM');
-        </script>
-    </head>
-    <body>
-        <section id="navbar-section">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html"><img src="images/Rudi_Logo.png" alt="Logo"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                      <a class="nav-link" href="kontak-my.html">Kontak My</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-           </section>
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-           <section id="kontak-my">
-            <div class="container-fluid">  
-            <h1>Kontak My</h1>
-            <h5>Ek is geleë in Tolwe Limpopo</h5>
-                <div class="row">
-                    <div class="col-md-6">
-                        <form class="" action="https://formsubmit.co/b16eeb6c13a7ded6e332e6abadc7cf3c" method="post">
-                            <input type="hidden" name="_subject" value="Website query">
-                            <label for="naam" class="form-label">Naam:</label>
-                            <input type="text" name="name" class="form-control" placeholder="Naam"required>
-                            <label for="nommer" class="form-label">Nommer:</label>
-                            <input type="number" name="nommer" class="form-control" placeholder="Nommer"required>
-                            <label for="email" class="form-label">Email Address:</label>
-                            <input type="email" name="email" class="form-control" placeholder="Email Address"required>
-                            <label for="boodskap" class="form-label">Boodskap:</label>
-                            <div class="d-grid gap-2">
-                              <textarea name="boodskap" class="form-control" rows="8" cols="80" placeholder="Boodskap" required></textarea>
-                              <button type="submit" class="btn btn-outline-warning btn-lg">Submit</button>
+    <!-- Font Awesome (local) -->
+    <script defer src="fontawesomev6/js/all.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kontak-my.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGT9CRT4GM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YGT9CRT4GM');
+    </script>
+</head>
+<body>
+
+    <!-- ===================== NAVIGASIE ===================== -->
+    <nav class="navbar navbar-expand-lg" id="main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Rudi_Logo.png" alt="Rudi's Stoffering Logo" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Maak navigasie oop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Tuis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#dienste">Dienste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#galery">Galery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="kontak-my.html">Kontak My</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== BLADSY HELD ===================== -->
+    <section id="kontak-hero" aria-label="Bladsy-opskrif">
+        <div class="container">
+            <span class="section-label">Laat ons praat</span>
+            <h1 class="section-heading">Kontak My</h1>
+            <p class="kontak-sub">Gebaseer in Tolwe, Limpopo &mdash; Gereed om jou projek te bespreek</p>
+        </div>
+    </section>
+
+    <!-- ===================== KONTAK INHOUD ===================== -->
+    <section id="kontak-section" aria-labelledby="form-heading">
+        <div class="container">
+            <div class="row">
+
+                <!-- ===== KONTAKVORM ===== -->
+                <div class="col-lg-7">
+                    <div class="kontak-form-wrapper">
+                        <h2 class="kontak-form-heading" id="form-heading">Stuur 'n Boodskap</h2>
+                        <form action="https://formsubmit.co/b16eeb6c13a7ded6e332e6abadc7cf3c" method="POST" novalidate>
+                            <!-- Formsubmit konfigurasie -->
+                            <input type="hidden" name="_subject" value="Nuwe Navraag van Rudi's Stoffering Website">
+                            <input type="hidden" name="_next" value="index.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_honey" class="form-honeypot">
+
+                            <div class="form-field">
+                                <label for="naam">Naam</label>
+                                <input
+                                    type="text"
+                                    id="naam"
+                                    name="name"
+                                    placeholder="Jou volle naam"
+                                    autocomplete="name"
+                                    required>
                             </div>
-                          </form>
+
+                            <div class="form-field">
+                                <label for="nommer">Telefoonnommer</label>
+                                <input
+                                    type="tel"
+                                    id="nommer"
+                                    name="nommer"
+                                    placeholder="bv. 082 123 4567"
+                                    autocomplete="tel"
+                                    required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">E-posadres</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="jou@epos.com"
+                                    autocomplete="email"
+                                    required>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="boodskap">Boodskap</label>
+                                <textarea
+                                    id="boodskap"
+                                    name="boodskap"
+                                    placeholder="Vertel my meer oor jou projek — watter meubels, materiaalvoorkeure, en wanneer jy gereed is..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit">
+                                <i class="fa-regular fa-paper-plane"></i>&nbsp; Stuur Boodskap
+                            </button>
+                        </form>
                     </div>
-                    <div class="col-md-6">
-                        <div class="google-map">
-                            <iframe src="https://maps.google.com/maps?q=tolwe&t=&z=13&ie=UTF8&iwloc=&output=embed" width="450" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <!-- ===== KONTAK BESONDERHEDE ===== -->
+                <div class="col-lg-5">
+                    <div class="kontak-info-wrapper">
+                        <h2 class="kontak-info-heading">Kontak Besonderhede</h2>
+
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h5>Ligging</h5>
+                                <p>Tolwe, Limpopo<br>Suid-Afrika</p>
+                            </div>
                         </div>
+
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h5>WhatsApp</h5>
+                                <a href="https://wa.me/message/HLCPWRBNMNRYA1" target="_blank" rel="noopener">
+                                    Stuur 'n WhatsApp boodskap
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h5>Werksure</h5>
+                                <p>Maandag &ndash; Vrydag: 08:00 &ndash; 17:00<br>Saterdag: Op aanvraag</p>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp Knoppie Blok -->
+                        <a href="https://wa.me/message/HLCPWRBNMNRYA1" class="whatsapp-block" target="_blank" rel="noopener" aria-label="Stuur 'n WhatsApp boodskap aan Rudi">
+                            <i class="fa-brands fa-whatsapp wa-icon"></i>
+                            <div class="whatsapp-block-text">
+                                <span>Vinnigste manier om my te bereik</span>
+                                <strong>Kontak My op WhatsApp</strong>
+                            </div>
+                        </a>
+
+                        <!-- Kaart -->
+                        <div class="map-wrapper">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Tolwe+Limpopo+South+Africa&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                allowfullscreen
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Tolwe, Limpopo op Google Maps">
+                            </iframe>
+                        </div>
+
                     </div>
-                </div>                
+                </div>
 
-            </div>    
-           </section>
+            </div>
+        </div>
+    </section>
 
-           <section id="footer-section">
-            <footer>
-             <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4">
-                  <a class="footer-pos-left footer-text footer-text-top" href="index.html">Home</a>
-                  <a class="footer-pos-left footer-text" href="kontak-my.html">Kontak My</a>
+    <!-- ===================== VOETSKRIF ===================== -->
+    <footer id="site-footer" aria-label="Werf voetskrif">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-lg-4 col-md-12">
+                    <img src="images/Rudi_Logo.png" alt="Rudi's Stoffering Logo" class="footer-logo">
+                    <p class="footer-tagline">Kwaliteit Bekleeding &amp; Stoffering in Limpopo</p>
                 </div>
-                <div class="col-md-4">
-                  <p></p>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-heading">Vinnige Skakels</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html" class="footer-link">Tuis</a></li>
+                        <li><a href="index.html#dienste" class="footer-link">Dienste</a></li>
+                        <li><a href="index.html#galery" class="footer-link">Galery</a></li>
+                        <li><a href="kontak-my.html" class="footer-link">Kontak My</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                  <h2 class="footer-pos-right footer-text footer-text-top">Kontak My Op WhatsApp:</h2>
-                  <a href="https://wa.me/message/HLCPWRBNMNRYA1"><i class="fa-brands fa-whatsapp fa-4x footer-icon"></i></a>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="footer-heading">Kontak</h4>
+                    <p class="footer-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Tolwe, Limpopo, Suid-Afrika
+                    </p>
+                    <a href="https://wa.me/message/HLCPWRBNMNRYA1" class="footer-whatsapp-btn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp My
+                    </a>
                 </div>
-              </div>
-             </div>
-            </footer>
-    
-           </section>
-        
-        <!-- bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <!-- js -->
-        <script src="" async defer></script>
-    </body>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rudi's Stoffering. Alle regte voorbehou.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmLjzqSvHkfSVbQe5t7qGtRuoKk" crossorigin="anonymous"></script>
+
+</body>
 </html>

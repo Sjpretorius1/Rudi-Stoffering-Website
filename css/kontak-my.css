@@ -1,42 +1,288 @@
-#kontak-my{
-    padding-bottom: 10%;
+/* =============================================================
+   RUDI'S STOFFERING — Contact Page Styles
+   kontak-my.css: page hero, form, contact info, map
+   ============================================================= */
+
+/* ===== SPAM PREVENTION (formsubmit honeypot — must stay hidden) ===== */
+.form-honeypot {
+    display: none;
 }
 
-#kontak-my h1{
-    text-shadow: 2px 2px orange;
-    padding: 5% 0 5% 0;
-    font-weight: 700;
+/* ===== PAGE HERO ===== */
+#kontak-hero {
+    background-color: var(--color-cream);
+    padding: 4.5rem 0 3.5rem;
+    border-bottom: 1px solid var(--color-border);
     text-align: center;
 }
 
-#kontak-my h5{
-    text-align: center;
+#kontak-hero .section-label {
+    justify-content: center;
+}
+
+#kontak-hero .section-label::before {
+    display: none;
+}
+
+#kontak-hero .section-heading {
+    margin-bottom: 0.6rem;
+}
+
+.kontak-sub {
+    font-size: 0.97rem;
+    color: var(--color-text-light);
+    margin: 0;
+}
+
+/* ===== MAIN CONTACT SECTION ===== */
+#kontak-section {
+    padding: 5.5rem 0 6.5rem;
+    background-color: var(--color-white);
+}
+
+/* ===== FORM ===== */
+.kontak-form-wrapper {
+    padding-right: 3rem;
+}
+
+.kontak-form-heading {
+    font-family: var(--font-display);
+    font-size: 1.55rem;
     font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-sand);
 }
 
-
-.google-map{
-
-    overflow:hidden;
-    margin-top:5%;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-
+.form-field {
+    margin-bottom: 1.35rem;
 }
 
-.google-map iframe{
-
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-
+.form-field label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-text);
+    margin-bottom: 0.4rem;
 }
 
-@media (max-width: 1028px) {
- form{
-     padding-bottom: 5%;
- }
+.form-field input,
+.form-field textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--color-text);
+    background-color: var(--color-white);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #BDB5AE;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: var(--color-leather);
+    box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.13);
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 148px;
+    line-height: 1.6;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 0.9rem 2rem;
+    background-color: var(--color-leather);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+    background-color: var(--color-leather-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+/* ===== CONTACT INFO PANEL ===== */
+.kontak-info-wrapper {
+    padding-left: 1rem;
+}
+
+.kontak-info-heading {
+    font-family: var(--font-display);
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-sand);
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.contact-detail:first-of-type {
+    padding-top: 0;
+}
+
+.contact-icon {
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.contact-icon i {
+    font-size: 1rem;
+    color: var(--color-leather);
+}
+
+.contact-detail-text h5 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    margin-bottom: 0.2rem;
+}
+
+.contact-detail-text p {
+    font-size: 0.92rem;
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.contact-detail-text a {
+    font-size: 0.92rem;
+    color: var(--color-leather);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-detail-text a:hover {
+    color: var(--color-leather-dark);
+    text-decoration: underline;
+}
+
+/* ===== WHATSAPP CTA BLOCK ===== */
+.whatsapp-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #25D366;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 1.1rem 1.5rem;
+    border-radius: var(--radius-lg);
+    margin-top: 1.75rem;
+    transition: var(--transition);
+}
+
+.whatsapp-block:hover {
+    background-color: #1DAE57;
+    color: var(--color-white);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+    text-decoration: none;
+}
+
+.whatsapp-block .wa-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.whatsapp-block-text span {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.82;
+    margin-bottom: 0.1rem;
+}
+
+.whatsapp-block-text strong {
+    font-size: 0.97rem;
+    font-weight: 600;
+}
+
+/* ===== MAP ===== */
+.map-wrapper {
+    margin-top: 1.75rem;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 260px;
+    border: none;
+    display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+    .kontak-form-wrapper {
+        padding-right: 0;
+        margin-bottom: 3.5rem;
+    }
+
+    .kontak-info-wrapper {
+        padding-left: 0;
+    }
+
+    #kontak-section {
+        padding: 4rem 0 5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    #kontak-hero {
+        padding: 3.5rem 0 2.5rem;
+    }
+
+    .kontak-form-heading,
+    .kontak-info-heading {
+        font-size: 1.3rem;
+    }
 }
