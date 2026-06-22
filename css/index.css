@@ -144,30 +144,18 @@
 }
 
 .about-image-wrapper {
-    position: relative;
-}
-
-.about-image-wrapper::before {
-    content: '';
-    position: absolute;
-    top: -1.25rem;
-    right: -1.25rem;
-    width: 60%;
-    height: 60%;
-    border: 2px solid var(--color-sand);
     border-radius: var(--radius-lg);
-    z-index: 0;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
 }
 
 .about-image {
-    position: relative;
-    z-index: 1;
     width: 100%;
-    border-radius: var(--radius-lg);
+    height: 100%;
+    display: block;
     object-fit: cover;
     object-position: center top;
-    aspect-ratio: 3 / 4;
-    box-shadow: var(--shadow-lg);
+    aspect-ratio: 4 / 3;
 }
 
 /* ===== DIENSTE ===== */
