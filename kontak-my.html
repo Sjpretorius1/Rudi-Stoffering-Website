@@ -52,7 +52,7 @@
 <body>
 
     <!-- ===================== NAVIGASIE ===================== -->
-    <nav class="navbar navbar-expand-lg" id="main-navbar">
+    <nav class="navbar navbar-dark navbar-expand-lg" id="main-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/Rudi_Logo.png" alt="Rudi's Stoffering Logo" class="navbar-logo">
@@ -254,6 +254,22 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmLjzqSvHkfSVbQe5t7qGtRuoKk" crossorigin="anonymous"></script>
+
+    <script>
+        // Fallback toggle if Bootstrap JS fails to load from CDN
+        window.addEventListener('load', function () {
+            if (typeof bootstrap !== 'undefined') return;
+            var toggler = document.querySelector('.navbar-toggler[data-bs-toggle="collapse"]');
+            if (!toggler) return;
+            var targetId = (toggler.getAttribute('data-bs-target') || '').replace('#', '');
+            var menu = document.getElementById(targetId);
+            if (!menu) return;
+            toggler.addEventListener('click', function () {
+                menu.classList.toggle('show');
+                toggler.setAttribute('aria-expanded', menu.classList.contains('show'));
+            });
+        });
+    </script>
 
 </body>
 </html>
